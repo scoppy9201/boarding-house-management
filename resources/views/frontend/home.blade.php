@@ -335,11 +335,6 @@
 </section>
 <!-- property section tab end -->
 
-
-
-
-
-
 <!-- blog section start -->
 <section class="blog-section bg-comman-2">
     <div class="container">
@@ -376,49 +371,6 @@
     </div>
 </section>
 <!-- blog section end -->
-
-<!-- brand section start -->
-{{-- <section class="small-section bg-light brand-wrap">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="title-2">
-                    <h2>Các công nghệ sử dụng</h2>
-                </div>
-                <div class="slide-2 brand-slider">
-                    <div>
-                        <a href="javascript:void(0)" class="logo-box">
-                            <img src="../assets/images/brand/6.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="logo-box">
-                            <img src="../assets/images/brand/7.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="logo-box">
-                            <img src="../assets/images/brand/8.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="logo-box">
-                            <img src="../assets/images/brand/9.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="javascript:void(0)" class="logo-box">
-                            <img src="../assets/images/brand/10.png" alt="" class="img-fluid">
-                        </a>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
-
 <!-- brand section end -->
 @endsection
 

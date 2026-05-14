@@ -22,13 +22,10 @@
 
     <!-- range slider css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/jquery-ui.css')}}">
-
     <!-- magnific css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/magnific-popup.css')}}">
-
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/animate.css')}}">
-
     <!-- Template css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/color1.css')}}">
@@ -36,7 +33,6 @@
 </head>
 
 <body class="layout-bg">
-    {{-- @include('frontend.components.load') --}}
     @include('frontend.components.header')
     @yield('content')
     @include('frontend.components.footer')
@@ -48,51 +44,36 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
      <!-- latest jquery-->
      <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
-
      <!-- popper js-->
      <script src="{{asset('assets/js/popper.min.js')}}"></script>
      @yield('js')
      <!-- magnific js -->
      <script src="{{asset('assets/js/jquery.magnific-popup.js')}}"></script>
      <script src="{{asset('assets/js/zoom-gallery.js')}}"></script>
- 
- 
-         <!-- range slider js -->
+    <!-- range slider js -->
      <script src="{{asset('assets/js/jquery-ui.js')}}"></script>
      <script src="{{asset('assets/js/jquery.ui.touch-punch.min.js')}}"></script>
-    
- 
      <!-- Bootstrap js-->
      <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
- 
- 
      <!-- feather icon js-->
      <script src="{{asset('assets/js/feather-icon/feather.min.js')}}"></script>
      <script src="{{asset('assets/js/feather-icon/feather-icon.js')}}"></script>
- 
      <!-- video js-->
      <script src="{{asset('assets/js/jquery.vide.min.js')}}"></script>
- 
      <!-- wow js-->
      <script src="{{asset('assets/js/wow.min.js')}}" ></script>
- 
      <!-- slick js -->
      <script src="{{asset('assets/js/slick.js')}}"></script>
      <script src="{{asset('assets/js/slick-animation.min.js')}}"></script>
      <script src="{{asset('assets/js/custom-slick.js')}}"></script>
- 
      <!-- Template js-->
      <script src="{{asset('assets/js/script.js')}}"></script>
-
      <script src="{{asset('assets/js/login.js')}}"></script>
- 
      <!-- Customizer js-->
      <script src="{{asset('assets/js/customizer.js')}}"></script>
- 
      <!-- Color-picker js-->
      <script src="{{asset('assets/js/color/template-color.js')}}"></script>
      <script src="{{asset('assets/js/color/layout10.js')}}"></script>
-    
     <script>
         function makeToast(title,color = "green") {
             Toastify({
@@ -109,14 +90,11 @@
     $toast = Session::get('toast');
     
    }
-    
    @endphp
     @if (isset($toast))
     <script>
         makeToast("{{ $toast[0] }}","{{ $toast[1] }}")
     </script>
     @endif
- 
 </body>
-
 </html>

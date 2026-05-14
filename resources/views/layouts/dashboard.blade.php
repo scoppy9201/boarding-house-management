@@ -14,17 +14,13 @@
     {{-- Toast JS --}}
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
     <!-- latest jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <!-- animate css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.css') }}">
-
     <!-- Template css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/admin.css') }}">
     <!-- Styles -->
@@ -65,28 +61,17 @@
 
 
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-
     <!-- Bootstrap js-->
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-
     <!-- feather icon js-->
     <script src="{{ asset('assets/js/feather-icon/feather.min.js') }}"></script>
     <script src="{{ asset('assets/js/feather-icon/feather-icon.js') }}"></script>
-
     <!-- sidebar js -->
     <script src="{{ asset('assets/js/sidebar.js') }}"></script>
-
-
-
     <!--admin js -->
     <script src="{{ asset('assets/js/admin-script.js') }}"></script>
-
     <!-- Customizer js-->
     <script src="{{ asset('assets/js/customizer.js') }}"></script>
-
-    {{-- <!-- Color-picker js-->
-    <script src="{{asset('assets/js/color/custom-colorpicker.js')}}"></script> --}}
-
     @if (isset($toast))
         <script>
             makeToast("{{ $toast[0] }}", "{{ $toast[1] }}")
@@ -98,5 +83,4 @@
         </script>
     @endif
 </body>
-
 </html>

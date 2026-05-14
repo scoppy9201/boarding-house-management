@@ -4,10 +4,7 @@
     </div>
     <div class="nav-right col p-0">
         <ul class="header-menu">
-
-            <li>
-
-            </li>
+            <li></li>
             <li>
                 <a href="#!" onclick="javascript:toggleFullScreen()">
                     <i data-feather="maximize"></i>
