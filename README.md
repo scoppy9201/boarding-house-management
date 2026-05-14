@@ -1,66 +1,276 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Boarding House Management
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <strong>Modern Boarding House Management Platform</strong>
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=flat&logo=laravel" alt="Laravel"></a>
+  <a href="#"><img src="https://img.shields.io/badge/PHP-8.2+-777BB4?style=flat&logo=php" alt="PHP"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Blade-Template-0EA5E9?style=flat" alt="Blade"></a>
+  <a href="#"><img src="https://img.shields.io/badge/TailwindCSS-3.x-38BDF8?style=flat&logo=tailwindcss" alt="Tailwind"></a>
+  <a href="#"><img src="https://img.shields.io/badge/MySQL-8.x-4479A1?style=flat&logo=mysql" alt="MySQL"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-green" alt="License"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Boarding House Management System
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Boarding House Management is a modern open-source system built with Laravel 11.
 
-## Learning Laravel
+The project focuses on modular architecture, clean UI design, scalability, and developer experience.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The system helps landlords manage rooms, tenants, contracts, utility bills, and payments in a centralized platform.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# Project Structure
 
-## Laravel Sponsors
+```bash
+boarding-house-management
+├── app
+│   ├── Http
+│   │   ├── Controllers       # Request handlers
+│   │   └── Middleware        # Authentication middleware
+│   ├── Models                # Eloquent models
+│   └── Services              # Business logic services
+├── database
+│   ├── migrations            # Database schema
+│   └── seeders               # Sample data
+├── resources
+│   ├── views                 # Blade templates
+│   └── css / js              # Frontend assets
+├── routes
+│   └── web.php               # Route definitions
+└── public                    # Static assets
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+# Core Modules
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Room Management
 
-## Contributing
+* Room listing & details
+* Room status tracking (available, occupied, maintenance)
+* Room type management
+* Room pricing configuration
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Tenant Management
 
-## Code of Conduct
+* Tenant profiles
+* ID card & contact information
+* Tenant status tracking
+* Tenant history
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Contract Management
 
-## Security Vulnerabilities
+* Create & manage rental contracts
+* Contract start / end dates
+* Deposit tracking
+* Contract renewal & termination
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Utility Management
 
-## License
+* Monthly electricity meter readings
+* Monthly water meter readings
+* Utility usage history
+* Automatic calculation
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Invoice Management
+
+* Auto-generate monthly invoices
+* Room fee + electricity + water + services
+* Invoice status tracking
+* Payment history
+
+## Payment Management
+
+* Record payments
+* Outstanding debt tracking
+* Payment receipts
+* Revenue overview
+
+## Service Management
+
+* Additional services (internet, parking, cleaning)
+* Service pricing
+* Service assignment per room
+
+## Reports & Statistics
+
+* Monthly revenue reports
+* Vacant room reports
+* Debt reports
+* Occupancy statistics
+
+---
+
+# Technology Stack
+
+## Backend
+
+| Technology | Version | Description         |
+| ---------- | ------- | ------------------- |
+| Laravel    | 11.x    | PHP Framework       |
+| PHP        | 8.2+    | Backend Language    |
+| MySQL      | 8+      | Database            |
+| Vite       | Latest  | Frontend Build Tool |
+
+## Frontend
+
+| Technology   | Description          | Version |
+| ------------ | -------------------- | ------- |
+| Blade        | Template Engine      | Latest  |
+| Tailwind CSS | UI Framework         | 3.x     |
+| Alpine.js    | Frontend Interaction | Latest  |
+| JavaScript   | Frontend Logic       | ES6+    |
+
+---
+
+# Installation Guide
+
+## Requirements
+
+Recommended environment:
+
+* PHP >= 8.2
+* Composer >= 2.x
+* MySQL >= 8.x
+* Node.js >= 18
+* NPM >= 9
+
+---
+
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/scoppy9201/boarding-house-management.git
+cd boarding-house-management
+```
+
+### 2. Install Dependencies
+
+```bash
+composer install
+npm install
+```
+
+### 3. Configure Environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Update database configuration:
+
+```env
+DB_DATABASE=boarding_house
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 4. Run Migration & Seeder
+
+```bash
+php artisan migrate:fresh --seed
+```
+
+### 5. Start Development Server
+
+```bash
+php artisan serve
+npm run dev
+```
+
+Visit:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# Authentication & Authorization
+
+* Custom authentication pages
+* Session-based authentication
+* Role & permission system (Admin / Staff)
+* Extendable RBAC architecture
+
+---
+
+# Architecture
+
+The system follows a modern modular architecture:
+
+* Service-based architecture
+* Reusable Blade components
+* Clean separation of concerns
+* Scalable business logic
+
+Main architecture layers:
+
+* Controllers
+* Services
+* Models
+* Blade Components
+* Views
+
+---
+
+# Use Cases
+
+This system is suitable for:
+
+* Boarding house & dormitory management
+* Apartment rental management
+* Small-scale property management
+* Academic & graduation projects
+
+---
+
+# Roadmap
+
+Upcoming planned features:
+
+* Tenant mobile app
+* Online payment integration
+* Maintenance request tracking
+* SMS / Email notifications
+* Advanced analytics dashboard
+* Multi-property support
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# License
+
+MIT License
+
+---
+
+# Links
+
+* GitHub: [https://github.com/scoppy9201/boarding-house-management](https://github.com/scoppy9201/boarding-house-management)
+
+---
+
+<div align="center">
+  Built with ❤️ using Laravel 11 & Blade
+</div>
