@@ -174,7 +174,7 @@
             <div class="col">
                 <div class="title-2">
                     <h2>Phòng trọ mới nhất</h2>
-                    <p>Khám phá những phòng trọ mới nhất tại Thái Nguyên trong hôm nay</p>
+                    <p>Khám phá những phòng trọ mới nhất tại Hà Nội trong hôm nay</p>
                 </div>
                 <div class="property-2 row column-space zoom-gallery">
                     @foreach ($rooms as $item)
